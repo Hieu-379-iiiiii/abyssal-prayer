@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://8t3i4nra5gm0"]
+
+[ext_resource type="Script" uid="uid://dieaffj5bsotx" path="res://Scripts/Game Controller/Player_Controller.gd" id="1_jymjo"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_o6rod"]
+size = Vector2(40.5, 40)
+
+[node name="CharacterBody2D" type="CharacterBody2D" unique_id=1170040350]
+script = ExtResource("1_jymjo")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=2010508486]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=802236640]
+position = Vector2(19.75, 20)
+shape = SubResource("RectangleShape2D_o6rod")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1576337789]

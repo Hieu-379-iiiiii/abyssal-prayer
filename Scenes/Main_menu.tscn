@@ -1,0 +1,48 @@
+[gd_scene format=3 uid="uid://dh4d1cyug1tv3"]
+
+[ext_resource type="Script" uid="uid://dx4x4i7wudf8m" path="res://Scripts/Ui_scripts/Menu_controller.gd" id="1_7sp8y"]
+
+[node name="MainMenu" type="Node2D" unique_id=873604356]
+script = ExtResource("1_7sp8y")
+
+[node name="Control" type="Control" parent="." unique_id=420095563]
+layout_mode = 3
+anchors_preset = 0
+
+[node name="Start" type="Button" parent="Control" unique_id=1858217250]
+layout_mode = 0
+offset_left = 532.0
+offset_top = 266.0
+offset_right = 619.0
+offset_bottom = 297.0
+text = "Chơi"
+
+[node name="Setting" type="Button" parent="Control" unique_id=2041640578]
+layout_mode = 0
+offset_left = 531.0
+offset_top = 316.0
+offset_right = 622.0
+offset_bottom = 347.0
+text = "Cài đặt"
+
+[node name="Quit" type="Button" parent="Control" unique_id=998489078]
+layout_mode = 0
+offset_left = 534.0
+offset_top = 372.0
+offset_right = 625.0
+offset_bottom = 403.0
+text = "Thoát"
+
+[node name="Label" type="Label" parent="Control" unique_id=1219636627]
+layout_mode = 0
+offset_left = 441.0
+offset_top = 182.0
+offset_right = 716.0
+offset_bottom = 240.0
+theme_override_font_sizes/font_size = 42
+text = "VỰC NGUYỆN"
+uppercase = true
+
+[connection signal="pressed" from="Control/Start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="Control/Setting" to="." method="_on_setting_pressed"]
+[connection signal="pressed" from="Control/Quit" to="." method="_on_quit_pressed"]
