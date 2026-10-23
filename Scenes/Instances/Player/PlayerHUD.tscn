@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://de0qr8hcfa8sl"]
+
+[ext_resource type="Script" uid="uid://dlw2hboujmi33" path="res://Scripts/UI/PlayerHUD.gd" id="1_a44y7"]
+
+[node name="PlayerHud" type="CanvasLayer" unique_id=363846286]
+script = ExtResource("1_a44y7")
+
+[node name="HUD" type="Control" parent="." unique_id=1622725096]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 382.0
+offset_bottom = 40.0
+
+[node name="HealthBar" type="ProgressBar" parent="HUD" unique_id=247797874]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 6.0
+offset_right = 432.0
+offset_bottom = 33.0
+
+[node name="StaminaBar" type="ProgressBar" parent="HUD" unique_id=577610667]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 44.0
+offset_right = 344.0
+offset_bottom = 71.0

@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://bq2gwmd3mdndj"]
 
 [ext_resource type="Script" uid="uid://ca18qhdojopm8" path="res://Scripts/Game Controller/GameController.gd" id="1_hhskc"]
+[ext_resource type="PackedScene" uid="uid://de0qr8hcfa8sl" path="res://Scenes/Instances/Player/PlayerHUD.tscn" id="2_tm1g2"]
 
 [node name="Lobby" type="Node2D" unique_id=620169717]
 
@@ -20,3 +21,5 @@ offset_top = 24.0
 offset_right = 871.0
 offset_bottom = 64.0
 color = Color(1, 0, 1, 1)
+
+[node name="PlayerHud" parent="." unique_id=363846286 instance=ExtResource("2_tm1g2")]
