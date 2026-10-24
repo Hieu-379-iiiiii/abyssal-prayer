@@ -18,11 +18,18 @@ config/icon="res://icon.svg"
 [autoload]
 
 GameManager="*uid://cw1ldrswj222s"
+SceneLoader="*uid://dq7ukqlo8fqk2"
 
 [display]
 
 window/stretch/mode="canvas_items"
 window/stretch/aspect="expand"
+
+[file_customization]
+
+folder_colors={
+"res://Scenes/": "green"
+}
 
 [input]
 

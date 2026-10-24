@@ -27,6 +27,9 @@ func set_player(new_player: Player) -> void:
 	player = new_player
 
 	var stats = player.stats
+	
+	health_bar.max_value = stats.max_health
+	stamina_bar.max_value = stats.max_stamina
 
 	# Connect signals.
 	stats.health_changed.connect(_on_health_changed)
@@ -35,13 +38,15 @@ func set_player(new_player: Player) -> void:
 	# Initialize UI.
 	_on_health_changed(stats.current_health, stats.max_health)
 	_on_stamina_changed(stats.current_stamina, stats.max_stamina)
-
-
-func _on_health_changed(current: float, maximum: float) -> void:
-	health_bar.max_value = maximum
+	
+func _on_health_changed(current: float, _maximum: float) -> void:
+	update_health(current)
+	
+func _on_stamina_changed(current: float, _maximum: float) -> void:
+	update_stamina(current)
+	
+func update_health(current: float) -> void:
 	health_bar.value = current
-
-
-func _on_stamina_changed(current: float, maximum: float) -> void:
-	stamina_bar.max_value = maximum
+	
+func update_stamina(current: float) -> void:
 	stamina_bar.value = current

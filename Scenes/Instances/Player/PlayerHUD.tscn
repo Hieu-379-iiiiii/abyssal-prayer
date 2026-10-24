@@ -12,6 +12,7 @@ offset_right = 382.0
 offset_bottom = 40.0
 
 [node name="HealthBar" type="ProgressBar" parent="HUD" unique_id=247797874]
+modulate = Color(1, 0, 0, 1)
 layout_mode = 0
 offset_left = 6.0
 offset_top = 6.0
@@ -19,6 +20,7 @@ offset_right = 432.0
 offset_bottom = 33.0
 
 [node name="StaminaBar" type="ProgressBar" parent="HUD" unique_id=577610667]
+modulate = Color(0, 1, 1, 1)
 layout_mode = 0
 offset_left = 12.0
 offset_top = 44.0

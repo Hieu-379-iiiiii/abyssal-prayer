@@ -11,7 +11,7 @@ signal died
 
 @export_group("Stamina")
 @export var max_stamina: float = 100.0
-@export var stamina_regen: float = 20.0
+@export var stamina_regen: float = 10.0
 
 @export_group("Movement")
 @export var move_speed: float = 300.0
@@ -19,7 +19,6 @@ signal died
 var current_health: float
 var current_stamina: float
 
-# Direction used by subclasses to control movement.
 var movement_direction: Vector2 = Vector2.ZERO
 
 var is_dead: bool = false
