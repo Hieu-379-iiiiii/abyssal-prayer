@@ -7,6 +7,7 @@
 [ext_resource type="Script" uid="uid://c5blexbqdqceo" path="res://Scripts/Components/InventoryComponent.gd" id="4_salew"]
 [ext_resource type="Script" uid="uid://bpjhlnl34d0ru" path="res://Scripts/Entities/Player/player_animation.gd.gd" id="5_tj1vf"]
 [ext_resource type="Texture2D" uid="uid://dbqtqgeqtbdmx" path="res://Assets/Texture/light.png" id="6_7sccu"]
+[ext_resource type="Script" uid="uid://by4gokxcpi3mv" path="res://Scripts/Entities/Player/PlayerMovement.gd" id="8_eqpb6"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_o6rod"]
 size = Vector2(23, 43)
@@ -269,10 +270,9 @@ animations = [{
 "speed": 8.0
 }]
 
-[node name="CharacterBody2D" type="CharacterBody2D" unique_id=1170040350]
+[node name="CharacterBody2D" type="CharacterBody2D" unique_id=1170040350 groups=["player"]]
 scale = Vector2(0.8, 0.8)
 script = ExtResource("1_jymjo")
-dash_speed = 700.0
 move_speed = 100.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=802236640]
@@ -304,3 +304,6 @@ sprite = NodePath("../AnimatedSprite2D")
 color = Color(0.91924727, 0.9118031, 0.77567, 1)
 energy = 0.5
 texture = ExtResource("6_7sccu")
+
+[node name="PlayerMovement" type="Node" parent="." unique_id=416008981]
+script = ExtResource("8_eqpb6")

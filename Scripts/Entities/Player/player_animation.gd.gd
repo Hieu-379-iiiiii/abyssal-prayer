@@ -17,12 +17,12 @@ func _process(_delta: float) -> void:
 	var state_prefix := "Idle"
 	if player.stats.is_dead:
 		state_prefix = "Death"
-	elif player.is_dashing:
+	elif player.movement.is_dashing:
 		state_prefix = "Dash"
 	elif player.velocity.length() > 1.0:
 		state_prefix = "Walk"
 
-	_update_facing(player.facing_direction)
+	_update_facing(player.movement.facing_direction)
 
 	var anim_name := "%s-%s" % [state_prefix, _last_dir_suffix]
 	if sprite.sprite_frames.has_animation(anim_name):

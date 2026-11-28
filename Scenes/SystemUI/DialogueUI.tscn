@@ -1,0 +1,63 @@
+[gd_scene format=3 uid="uid://cjsk1ia0kl4b2"]
+
+[ext_resource type="Script" uid="uid://bu6fldf86yq8r" path="res://Scripts/UI/Dialouge/DialogueUI.gd" id="1_fa8sf"]
+
+[node name="DialogueUi" type="CanvasLayer" unique_id=903209731]
+script = ExtResource("1_fa8sf")
+
+[node name="Root" type="Control" parent="." unique_id=842873319]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="DialoguePanel" type="PanelContainer" parent="Root" unique_id=157563270]
+custom_minimum_size = Vector2(0, 200)
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -271.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="MarginContainer" type="MarginContainer" parent="Root/DialoguePanel" unique_id=52211692]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Root/DialoguePanel/MarginContainer" unique_id=1423887540]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Root/DialoguePanel/MarginContainer/VBoxContainer" unique_id=1134760466]
+layout_mode = 2
+
+[node name="CharacterPortrait" type="TextureRect" parent="Root/DialoguePanel/MarginContainer/VBoxContainer/HBoxContainer" unique_id=1349503277]
+custom_minimum_size = Vector2(140, 140)
+layout_mode = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="DialogueContent" type="VBoxContainer" parent="Root/DialoguePanel/MarginContainer/VBoxContainer/HBoxContainer" unique_id=951754174]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="CharacterName" type="Label" parent="Root/DialoguePanel/MarginContainer/VBoxContainer/HBoxContainer/DialogueContent" unique_id=342650879]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+
+[node name="DialogueText" type="RichTextLabel" parent="Root/DialoguePanel/MarginContainer/VBoxContainer/HBoxContainer/DialogueContent" unique_id=245851088]
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 2
+bbcode_enabled = true
+scroll_active = false
+
+[node name="ButtonContainer" type="HBoxContainer" parent="Root/DialoguePanel/MarginContainer/VBoxContainer" unique_id=1434021634]
+layout_mode = 2
+
+[node name="SkipButton" type="Button" parent="Root/DialoguePanel/MarginContainer/VBoxContainer/ButtonContainer" unique_id=1385775264]
+custom_minimum_size = Vector2(80, 35)
+layout_mode = 2
+text = "Skip"

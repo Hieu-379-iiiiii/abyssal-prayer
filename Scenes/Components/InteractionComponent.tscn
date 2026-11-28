@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://be25u7k34dcs3"]
+
+[ext_resource type="Script" uid="uid://0e7g7n4boaj8" path="res://Scripts/Components/InteractionComponent.gd" id="1_lhunc"]
+[ext_resource type="PackedScene" uid="uid://bjdmb0g3fkehs" path="res://Scenes/Components/InteractionPrompt.tscn" id="2_ill74"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_o6rod"]
+radius = 50.0
+
+[node name="InteractionComponent" type="Area2D" unique_id=883286144]
+script = ExtResource("1_lhunc")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2093213981]
+shape = SubResource("CircleShape2D_o6rod")
+
+[node name="InteractionPrompt" parent="." unique_id=1522283832 instance=ExtResource("2_ill74")]
+visible = false
+z_index = 3
+offset_left = -167.0
+offset_top = 3.0
+offset_right = 53.0
+offset_bottom = 48.0

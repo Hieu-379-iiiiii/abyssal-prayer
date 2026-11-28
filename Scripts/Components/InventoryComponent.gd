@@ -17,7 +17,7 @@ func _ready() -> void:
 		"quantity": 0
 	}
 
-
+# The fuck am I doing
 func add_item(item: ItemData, amount: int = 1) -> bool:
 	if item == null or amount <= 0:
 		return false
