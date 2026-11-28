@@ -7,7 +7,7 @@ var loading_screen : PackedScene = preload("res://Scenes/SystemUI/LoadingScreen.
 var loaded_resource: PackedScene
 var scene_path: String
 var progress: Array = []
-var use_sub_threads : bool = false # Safer for 2D TileSets
+var use_sub_threads : bool = false 
 
 func _ready() -> void:
 	set_process(false)
