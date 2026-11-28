@@ -270,7 +270,10 @@ animations = [{
 }]
 
 [node name="CharacterBody2D" type="CharacterBody2D" unique_id=1170040350]
+scale = Vector2(0.8, 0.8)
 script = ExtResource("1_jymjo")
+dash_speed = 700.0
+move_speed = 100.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=802236640]
 position = Vector2(0.5, 5.5)

@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://dh4d1cyug1tv3"]
 
 [ext_resource type="Script" uid="uid://dx4x4i7wudf8m" path="res://Scripts/UI/SystemUIScripts/Menu_controller.gd" id="1_7sp8y"]
+[ext_resource type="Texture2D" uid="uid://0d3xj5ry80tf" path="res://Assets/BG/Menu_BG.png" id="2_pc006"]
 
 [node name="MainMenu" type="Node2D" unique_id=873604356]
 script = ExtResource("1_7sp8y")
@@ -42,6 +43,12 @@ offset_bottom = 240.0
 theme_override_font_sizes/font_size = 42
 text = "VỰC NGUYỆN"
 uppercase = true
+
+[node name="MenuBg" type="Sprite2D" parent="." unique_id=1313421793]
+z_index = -1
+position = Vector2(577.50006, 321)
+scale = Vector2(0.8335756, 0.83333325)
+texture = ExtResource("2_pc006")
 
 [connection signal="pressed" from="Control/Start" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="Control/Setting" to="." method="_on_setting_pressed"]

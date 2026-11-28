@@ -1,0 +1,41 @@
+[gd_scene format=3 uid="uid://xyu3xmaav4v2"]
+
+[ext_resource type="Texture2D" uid="uid://c8kfvv6xcrjs2" path="res://Assets/Tilesets/Dungeon/img/fire_animation2.png" id="1_kh48m"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kh48m"]
+atlas = ExtResource("1_kh48m")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wuyqe"]
+atlas = ExtResource("1_kh48m")
+region = Rect2(0, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rtrap"]
+atlas = ExtResource("1_kh48m")
+region = Rect2(0, 128, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_o6rod"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kh48m")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wuyqe")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rtrap")
+}],
+"loop": 1,
+"name": &"Candles",
+"speed": 5.0
+}]
+
+[node name="Candle" type="Node2D" unique_id=993154102]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1472063578]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_o6rod")
+animation = &"Candles"
+autoplay = "Candles"
+frame_progress = 0.6688085

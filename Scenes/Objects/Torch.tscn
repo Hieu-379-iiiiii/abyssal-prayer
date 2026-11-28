@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://0sdlxn6mswgv"]
+
+[ext_resource type="SpriteFrames" uid="uid://d6p8nxbr4s62" path="res://Assets/Animations/Torch-front.tres" id="1_2bomy"]
+[ext_resource type="Texture2D" uid="uid://dbqtqgeqtbdmx" path="res://Assets/Texture/light.png" id="2_ak37a"]
+
+[node name="Torch" type="Node2D" unique_id=1056376434]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1695183228]
+texture_filter = 1
+sprite_frames = ExtResource("1_2bomy")
+animation = &"Torch-front"
+autoplay = "Torch-front"
+frame_progress = 0.67405915
+
+[node name="PointLight2D" type="PointLight2D" parent="." unique_id=314263198]
+color = Color(0.78346974, 0.76480675, 3.85046e-07, 1)
+energy = 0.6
+texture = ExtResource("2_ak37a")
+texture_scale = 0.4

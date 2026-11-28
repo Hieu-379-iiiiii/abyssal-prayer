@@ -1,0 +1,53 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://d6p8nxbr4s62"]
+
+[ext_resource type="Texture2D" uid="uid://cqjnehsxnwt0c" path="res://Assets/Tilesets/Dungeon/img/fire_animation.png" id="1_sq7h4"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8sh06"]
+atlas = ExtResource("1_sq7h4")
+region = Rect2(37, 0, 37, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g86mp"]
+atlas = ExtResource("1_sq7h4")
+region = Rect2(37, 48, 37, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bx5oc"]
+atlas = ExtResource("1_sq7h4")
+region = Rect2(37, 96, 37, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6xei3"]
+atlas = ExtResource("1_sq7h4")
+region = Rect2(37, 144, 37, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sixkw"]
+atlas = ExtResource("1_sq7h4")
+region = Rect2(37, 192, 37, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_000tg"]
+atlas = ExtResource("1_sq7h4")
+region = Rect2(37, 240, 37, 48)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8sh06")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_g86mp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bx5oc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6xei3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sixkw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_000tg")
+}],
+"loop": 1,
+"name": &"Torch-front",
+"speed": 5.0
+}]
